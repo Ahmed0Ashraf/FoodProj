@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Signup with YALLAORDER"
+        android:textAllCaps="false"
+        android:textColor="@color/mainGreen"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstname_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="Firstname"
+        android:inputType="textPersonName"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/lastname_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="Lastname"
+        android:inputType="textPersonName"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/firstname_editText"
+        app:layout_constraintStart_toStartOf="@+id/firstname_editText"
+        app:layout_constraintTop_toBottomOf="@+id/firstname_editText" />
+
+    <EditText
+        android:id="@+id/email_signup_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="none|textEmailAddress"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/lastname_editText"
+        app:layout_constraintStart_toStartOf="@+id/lastname_editText"
+        app:layout_constraintTop_toBottomOf="@+id/lastname_editText" />
+
+    <EditText
+        android:id="@+id/password_signup_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="none|textPassword"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_signup_editText"
+        app:layout_constraintStart_toStartOf="@+id/email_signup_editText"
+        app:layout_constraintTop_toBottomOf="@+id/email_signup_editText" />
+
+    <EditText
+        android:id="@+id/confirm_password_signup_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="none|textPassword"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/password_signup_editText"
+        app:layout_constraintStart_toStartOf="@+id/password_signup_editText"
+        app:layout_constraintTop_toBottomOf="@+id/password_signup_editText" />
+
+    <EditText
+        android:id="@+id/telephone_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="Telephone"
+        android:inputType="none|number"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_password_signup_editText"
+        app:layout_constraintStart_toStartOf="@+id/confirm_password_signup_editText"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_signup_editText" />
+
+    <EditText
+        android:id="@+id/address_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_storke"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="none|text"
+        android:paddingStart="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/telephone_editText"
+        app:layout_constraintStart_toStartOf="@+id/telephone_editText"
+        app:layout_constraintTop_toBottomOf="@+id/telephone_editText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/firstname_editText"
+        app:layout_constraintTop_toTopOf="@+id/firstname_editText"
+        app:srcCompat="@drawable/pass" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/lastname_editText"
+        app:layout_constraintTop_toTopOf="@+id/lastname_editText"
+        app:srcCompat="@drawable/pass" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/email_signup_editText"
+        app:layout_constraintTop_toTopOf="@+id/email_signup_editText"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/password_signup_editText"
+        app:layout_constraintTop_toTopOf="@+id/password_signup_editText"
+        app:srcCompat="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/confirm_password_signup_editText"
+        app:layout_constraintTop_toTopOf="@+id/confirm_password_signup_editText"
+        app:srcCompat="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/telephone_editText"
+        app:layout_constraintTop_toTopOf="@+id/telephone_editText"
+        app:srcCompat="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/address_editText"
+        app:layout_constraintTop_toTopOf="@+id/address_editText"
+        app:srcCompat="@drawable/location" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="@+id/address_editText"
+        app:layout_constraintStart_toStartOf="@+id/address_editText"
+        app:layout_constraintTop_toBottomOf="@+id/address_editText" />
+
+    <Button
+        android:id="@+id/facebook_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="@+id/signup_button"
+        app:layout_constraintStart_toStartOf="@+id/signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/signup_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

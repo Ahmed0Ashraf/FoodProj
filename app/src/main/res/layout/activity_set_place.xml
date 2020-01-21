@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetPlaceActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/area_editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/area_and_region"
+        android:ems="10"
+        android:hint="Area"
+        android:inputType="none|text"
+        android:paddingStart="25dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <EditText
+        android:id="@+id/area_editText2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/area_and_region"
+        android:ems="10"
+        android:hint="Region"
+        android:inputType="none|text"
+        android:paddingStart="25dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/area_editText"
+        app:layout_constraintStart_toStartOf="@+id/area_editText"
+        app:layout_constraintTop_toBottomOf="@+id/area_editText" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/area_editText"
+        app:layout_constraintTop_toTopOf="@+id/area_editText"
+        app:srcCompat="@drawable/down_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/area_editText"
+        app:layout_constraintTop_toTopOf="@+id/area_editText"
+        app:srcCompat="@drawable/navpng" />
+
+    <Button
+        android:id="@+id/set_now_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:text="Set Now"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="@+id/area_editText2"
+        app:layout_constraintStart_toStartOf="@+id/area_editText2"
+        app:layout_constraintTop_toBottomOf="@+id/area_editText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
