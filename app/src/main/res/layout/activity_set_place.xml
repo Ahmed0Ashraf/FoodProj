@@ -8,14 +8,16 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="150dp"
+        android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.6"
         app:srcCompat="@drawable/logo" />
 
     <EditText

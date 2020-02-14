@@ -9,23 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentActivity"></activity>
-        <activity android:name=".AddToCartActivity" />
-        <activity android:name=".ResturantMenuActivity" />
-        <activity android:name=".ResturantsActivity" />
-        <activity android:name=".SetPlaceActivity" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".ForgetPasswordActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".PaymentActivity"
+            android:label="Payment"></activity>
+        <activity android:name=".AddToCartActivity"
+            android:label="Item Details"/>
+        <activity android:name=".ResturantMenuActivity"
+            android:label="Menu"/>
+        <activity android:name=".ResturantsActivity"
+            android:label="Home"/>
+        <activity android:name=".SetPlaceActivity"
+            android:label="Set Location"/>
+        <activity android:name=".SignupActivity"
+            android:label="Sign Up"/>
+        <activity android:name=".ForgetPasswordActivity"
+            android:label="Forget Password"/>
+        <activity android:name=".LoginActivity"
+            android:label="Login"/>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
